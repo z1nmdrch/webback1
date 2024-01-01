@@ -1,18 +1,15 @@
-# BMI Calculator
+# BMI Calculator Web Application
+
+This is a simple web application that calculates the Body Mass Index (BMI) of an individual based on their weight and height. The application is built using Node.js, Express.js, and basic HTML, CSS, and JavaScript.
 
 ## Installation
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Run `npm install` to install dependencies.
-4. Run `npm start` to start the server.
-5. Open your browser and go to http://localhost:3000.
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `node root.js` to start the server (Server will run on port 3000)
 
 ## Dependencies
-- Express.js
-- Bootstrap (or any other CSS framework)
-
-## Server Configuration
-The server runs on port 3000.
+- express
+- body-parser
 
 ## File Structure
 - **public:** Contains static files (CSS and JS).
@@ -22,12 +19,10 @@ The server runs on port 3000.
 - **README.md:** Instructions and information.
 
 ## Usage
-1. Open the BMI calculator website.
-2. Enter weight and height.
-3. Optionally, enter age and select gender.
-4. Select units (Imperial or Metric).
-5. Click the "Calculate BMI" button.
-6. View the calculated BMI result and interpretation.
+1. Open the browser and navigate to http://localhost:3000
+2. Enter your weight, height, age, and select units.
+3. Click the "Calculate BMI" button to see the result.
 
 ## Footer
 Created by [Zhunisbek Zangar], Group [SE-2207].
+
