@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Calculator</title>
   <link rel="stylesheet" href="/css/style.css">
-  <!-- Add Bootstrap CDN link here if you want to use Bootstrap -->
 </head>
 <body>
 
@@ -16,17 +15,33 @@
   </header>
 
   <div class="container">
-    <form action="/bmicalculator" method="post" onsubmit="return validateForm()">
-      <label for="weight">Weight (kg):</label>
+    <form id="bmiForm" action="/bmicalculator" method="post">
+      <label for="weight">Weight (kg/lbs):</label>
       <input type="text" id="weight" name="weight" required>
-      <label for="height">Height (m):</label>
+
+      <label for="height">Height (m/inches):</label>
       <input type="text" id="height" name="height" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" required>
+
+      <label for="unit">Unit:</label>
+      <select id="unit" name="unit" required>
+        <option value="metric">Metric</option>
+        <option value="imperial">Imperial</option>
+      </select>
+
       <button type="submit">Calculate BMI</button>
     </form>
 
-    <!-- Result Section -->
-    <div id="result" class="result-section">
-      <p id="resultText"></p>
+    <div id="bmiResultContainer" class="result-section">
+      <p id="bmiResultText"></p>
     </div>
   </div>
 
